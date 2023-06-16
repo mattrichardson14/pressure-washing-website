@@ -443,22 +443,25 @@
 }
 
 .information_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    min-height: 90vh;
-    background-color: white;
-    z-index: 1;
-    width: 100%;
-    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
 }
 
+.information_card {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
 
 .information_card img {
-    width: 85%;
+    width: 100%;
+    height: auto;
     border-radius: 6px;
+    margin-bottom: 1rem;
 }
 
 .information_card p {
@@ -492,6 +495,28 @@
     z-index: 2;
     color: white;
     text-decoration: none;
+}
+
+.information_card .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .information_container {
+        flex-direction: column;
+    }
+
+    .information_card {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .information_card:nth-child(2) {
+        margin-top: -4rem;
+        
+    }
 }
 
 /* Footer CSS */
