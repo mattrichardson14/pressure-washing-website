@@ -607,4 +607,23 @@
     }
 }
 
+/* Get Quote CSS */
 
+.form {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    
+  }
+
+  #scope-of-work {
+    
+  }
